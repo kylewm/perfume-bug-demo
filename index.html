@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script src="node_modules/perfume.js/dist/perfume.iife.min.js"></script>
+    <script>
+      const perfume = new Perfume({
+        analyticsTracker: ({ metricName, data }) => {
+          const output = document.getElementById('output')
+          output.value += `${metricName} = ${JSON.stringify(data)}\n`
+          console.log(metricName, data);
+        },
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Perfume.js Test Case</h1>
+    <p>
+      Cmd-click <a href="#">here to open this page in a new tab</a>.
+    </p>
+
+    <textarea id="output" cols="150" rows="30"></textarea>
+  </body>
+</html>

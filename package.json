@@ -1,0 +1,9 @@
+{
+  "name": "",
+  "description": "",
+  "version": "0.1.0",
+  "dependencies": {
+    "perfume.js": "^5.3.0"
+  },
+  "devDependencies": {}
+}
